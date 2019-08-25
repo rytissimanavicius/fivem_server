@@ -1,3 +1,3 @@
-cd /d C:\Users\rytuciss\Desktop\server\cfx-server-data-master
-C:\Users\rytuciss\Desktop\server\run.cmd +exec server.cfg   
+cd /d C:\Users\rytuciss\Desktop\fivem_server\cfx-server-data-master
+C:\Users\rytuciss\Desktop\fivem_server\run.cmd +exec server.cfg   
 

@@ -1,14 +1,11 @@
-vehicles = {"Tyrus", "Vacca", "stop"}
-
-RegisterCommand("car", function(source, args)
+RegisterCommand("vehicle", function(source, args)
 	i = 1
 	while true do
-		if vehicles[i] == args[1] then
-			spawnCar(args[1])
-			notify("~g~Spawned " .. vehicles[i] .. ".")
+		if id[i] == args[1] then
+			spawn(args[1])
+			notify("~g~Spawned " .. name[i] .. ".")
 			break
-			--print(PlayerPedId(-1) .. " spawned " .. args[1])
-		elseif vehicles[i] == "stop" then
+		elseif id[i] == "stop" then
 			notify("~y~Vehicle not found.")
 			break
 		end
