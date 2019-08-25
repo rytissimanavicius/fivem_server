@@ -1,4 +1,4 @@
-id = {"unarmed", "knife", "nightstick", "hammer", "bat", "crowbar",                          		--melee
+idList = {"unarmed", "knife", "nightstick", "hammer", "bat", "crowbar",                             --melee
 	  "golfclub", "bottle", "dagger", "hatchet", "knuckle", "machete", 
 	  "flashlight", "switchblade", "poolcue", "wrench", "battleaxe",
 	  
@@ -25,7 +25,7 @@ id = {"unarmed", "knife", "nightstick", "hammer", "bat", "crowbar",             
 	  
 	  "stop"}
 
-name = {"Unarmed", "Knife", "Nightstick", "Hammer", "Bat", "Crowbar",                               --melee        
+nameList = {"Unarmed", "Knife", "Nightstick", "Hammer", "Bat", "Crowbar",                           --melee        
 		"Golfclub", "Bottle", "Dagger", "Hatchet", "Knuckle Duster", "Machete", 
 		"Flashlight", "Switchblade", "Pool Cue", "Wrench", "Battleaxe",
 		
