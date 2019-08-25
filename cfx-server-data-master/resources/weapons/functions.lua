@@ -8,22 +8,18 @@ function giveWeapon(hash)
 	GiveWeaponToPed(GetPlayerPed(-1), GetHashKey(hash), 500, false, false)
 end
 
-function removeWeapons()
+function removeWeapons()                                                          --remove ALL weapons
 	RemoveAllPedWeapons(GetPlayerPed(-1), true)
 end
 
-function removeWeapon(id)
-	RemoveWeaponFromPed(GetPlayerPed(-1), "weapon_" .. id)
+function removeWeapon(hash)
+	RemoveWeaponFromPed(GetPlayerPed(-1), "weapon_" .. hash)                      --remove ONE selected weapon
 end
 
---[[function infiniteAmmo(hash)
-	SetPedInfiniteAmmo(GetPlayerPed(-1), true, GetHashKey(hash))
-end]]--
+function addAmmo(hash, ammo)
+	AddAmmoToPed(GetPlayerPed(-1), GetHashKey("weapon_" .. hash), ammo)
+end
 
---[[function giveComponent(weaponHash, componentHash)
-	if HasPedGotWeapon(GetPlayerPed(-1), GetHashKey(weaponHash), false) then
-		GiveWeaponComponentToPed(GetPlayerPed(-1), GetHashKey(weaponHash), GetHashKey(componentHash))
-	end
-end]]--
-
-
+function infiniteAmmo(toggle, hash)
+	SetPedInfiniteAmmo(GetPlayerPed(-1), toggle, "weapon_" .. hash)
+end
