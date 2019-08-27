@@ -1,13 +1,12 @@
 function changeSelection(switch)
-	local checkSelection = elementSelected + switch
-	if whichMenu == 1 then
-		if checkSelection ~= 0 and checkSelection ~= 6 then --todo: automate this functions
-			elementSelected = elementSelected + switch
-		end
+	checkSelection = elementSelected + switch
+	if checkSelection ~= 0 and checkSelection ~= selectionAmountInMenu[whichMenu + 1] + 1 then
+		elementSelected = elementSelected + switch
 	end
 end
 
 function changeMenu()
-
+	whichMenu = elementSelected
+	elementSelected = 1
 end
 

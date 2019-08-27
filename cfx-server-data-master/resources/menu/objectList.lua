@@ -1,11 +1,11 @@
-selectionAmountInMenu = {5}                                         --how many selections each menu has
-menuRectPosition = {0.41}                                           --where to start drawing rectangles depending on the amount of menu selections
-menuTextPosition = {0.396}                                          --where to start drawing text depending on the amount of menu selections
+selectionAmountInMenu = {0--[[mainmenu]], 5, 6}                           --how many selections each menu has
+menuRectPosition = {0--[[mainmenu]], 0.4, 0.375}                          --where to start drawing rectangles depending on the amount of menu selections
+menuTextPosition = {0--[[mainmenu]], 0.386, 0.361}                        --where to start drawing text depending on the amount of menu selections
 
-menuSelections = {"PLAYER", "WEAPONS", "VEHICLES", "WORLD", "OTHER" --mainmenu
+menuSelections = {"PLAYER", "WEAPONS", "VEHICLES", "WORLD", "OTHER",      --main menu
 
-}
-menuTextCenters = {0.476, 0.469, 0.4705, 0.4775, 0.479              --mainmenu
+"WEAPONS", "ATTACHMENTS", "AMMO", "OTHER", "REMOVE", "BACK"               --weapons menu
+
 
 }
 

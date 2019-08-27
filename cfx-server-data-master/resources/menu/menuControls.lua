@@ -9,12 +9,17 @@ Citizen.CreateThread(function()
 				drawMenu()
 				notification("~g~MENU ON.")
 			else
+				whichMenu = 1
+				elementSelected = 1
 				menuToggle = false
 				drawMenu()
 				notification("~r~MENU OFF.")
 			end
 		end
 		if menuToggle then
+			if IsControlJustReleased(1, 18) then
+				changeMenu()
+			end
 			if IsControlJustReleased(1, 172) then
 				changeSelection(-1)
 			end

@@ -11,6 +11,7 @@ end
 function text(text, x, y, r, g, b)
 	SetTextFont(0) 
 	SetTextScale(0.4, 0.4) 
+	SetTextJustification(0)
 	SetTextColour(r, g, b, 255)
 	SetTextEntry("STRING")
 	AddTextComponentString(text)
