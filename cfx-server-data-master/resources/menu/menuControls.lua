@@ -17,8 +17,12 @@ Citizen.CreateThread(function()
 			end
 		end
 		if menuToggle then
-			if IsControlJustReleased(1, 18) then
-				changeMenu()
+			if IsControlJustReleased(1, 18) then --todo: once there are a lot of functions optimize it by categorizing them
+				functionActive = true
+				previousMenu()
+				if not functionActive then
+					changeMenu()
+				end
 			end
 			if IsControlJustReleased(1, 172) then
 				changeSelection(-1)
