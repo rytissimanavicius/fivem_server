@@ -12,13 +12,13 @@ Citizen.CreateThread(function()
 				whichMenu = 1
 				elementSelected = 1
 				menuToggle = false
-				drawMenu()
 				notification("~r~MENU OFF.")
 			end
 		end
 		if menuToggle then
 			if IsControlJustReleased(1, 18) then --todo: once there are a lot of functions optimize it by categorizing them
 				functionActive = true
+				exitMenu()
 				previousMenu()
 				if not functionActive then
 					changeMenu()

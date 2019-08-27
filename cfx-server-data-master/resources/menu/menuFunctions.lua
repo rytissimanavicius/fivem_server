@@ -22,3 +22,12 @@ function previousMenu()
 		functionActive = false
 	end
 end
+
+function exitMenu()
+	if whichMenu == 1 and elementSelected == selectionAmountInMenu[whichMenu + 1] then --todo: after exiting, activating menu doesnt work for a few clicks
+		whichMenu = 1
+		elementSelected = 1
+		menuToggle = false
+		notification("~r~MENU OFF.")
+	end
+end
